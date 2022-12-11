@@ -1,6 +1,6 @@
-query Districts {
-  db_queryDistrics {
-   objectid
-   dist_aname
+{
+  db_findManydistricts {
+     objectid
+     dist_aname
   }
 }
