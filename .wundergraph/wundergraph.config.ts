@@ -15,7 +15,7 @@ const spacex = introspect.graphql({
 
 const db = introspect.postgresql({
   apiNamespace: 'db',
-  databaseURL: process.env.DATABASE_URL,
+  databaseURL: EnvironmentVariable('DATABASE_URL'),
 })
 
 // configureWunderGraph emits the configuration
