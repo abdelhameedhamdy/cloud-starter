@@ -2,5 +2,6 @@
   db_findManydistricts {
      objectid
      dist_aname
+     sect_code
   }
 }
