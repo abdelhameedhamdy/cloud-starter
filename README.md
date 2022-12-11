@@ -47,3 +47,4 @@ curl -X GET https://{YOUR_PROJECT_NAME}.wundergraph.dev/operations/Dragons
 
 Read the [Docs](https://wundergraph.com/docs).
 :)
+:)
