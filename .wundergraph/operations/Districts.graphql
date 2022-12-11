@@ -1,0 +1,6 @@
+query Districts {
+  db_queryDistrics {
+   objectid
+   dist_aname
+  }
+}
