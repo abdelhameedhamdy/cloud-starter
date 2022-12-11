@@ -13,9 +13,14 @@ const spacex = introspect.graphql({
   url: "https://spacex-api.fly.dev/graphql",
 });
 
+const db = introspect.postgresql({
+  apiNamespace: 'db',
+  databaseURL: 'postgresql://postgres:hamido@411_@db.iznphlblnswbbpecznsq.supabase.co:6543/postgres',
+})
+
 // configureWunderGraph emits the configuration
 configureWunderGraphApplication({
-  apis: [spacex],
+  apis: [spacex, db],
   server,
   operations,
   codeGenerators: [
