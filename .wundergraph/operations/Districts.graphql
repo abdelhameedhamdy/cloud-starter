@@ -1,5 +1,5 @@
 {
-  districts {
+  db_findManydistricts: districts {
      fid: id
      dist_aname: districtName
      sect_code: sectorName
