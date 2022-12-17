@@ -3,6 +3,6 @@ query Districts {
      fid
      dist_aname
      sect_code
-     shape.area
+     shape_area
   }
 }
