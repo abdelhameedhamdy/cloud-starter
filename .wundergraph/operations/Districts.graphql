@@ -1,8 +1,8 @@
-query Districts {
-  db_findManydistricts {
-     fid
-     dist_aname
-     sect_code
-     shape_area
+query {
+  districts: db_findManydistricts {
+    id: fid
+    districtName: dist_aname
+    sectorCode: sect_code
+    area: shape_area
   }
 }

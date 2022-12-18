@@ -10,6 +10,18 @@ export default configureWunderGraphServer<HooksConfig, InternalClient>(() => ({
           hook.log.info("postResolve hook for Dragons");
         },
       },
+      // Districts: {
+      //   mutatingPostResolve: async (hook) => {
+      //     return {
+      //       ...hook.response,
+      //       data: {
+      //         db_findManydistricts : {
+      //           ...hook.response.data?.db_findManydistricts,
+      //         }
+      //       }
+      //     };
+      //   },
+      // },
     },
     mutations: {},
   },
