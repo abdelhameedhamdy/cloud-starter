@@ -20,7 +20,11 @@ export default configureWunderGraphServer<HooksConfig, InternalClient>(() => ({
       Districts: {
         mutatingPostResolve: async (hook) => {
           const mutated = hook.response.data?.districts.map((d) => {
-            d = { ...d, area: Number(d.area!.toFixed(2)) };
+            d = {
+              ...d,
+              area: Number(d.area!.toFixed(2)),
+              sectorCode: `بلدية ${d.sectorCode}`,
+            };
             return d;
           });
           return {
