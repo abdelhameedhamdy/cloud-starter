@@ -24,6 +24,7 @@ export default configureWunderGraphServer<HooksConfig, InternalClient>(() => ({
               ...d,
               area: Number(d.area!.toFixed(2)),
               sectorCode: `بلدية ${d.sectorCode}`,
+              length: Number(d.length?.toFixed(2)),
             };
           });
           return {

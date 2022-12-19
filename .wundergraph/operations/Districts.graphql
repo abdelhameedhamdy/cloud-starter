@@ -4,5 +4,6 @@ query {
     districtName: dist_aname
     sectorCode: sect_code
     area: shape_area
+    length: shape_len
   }
 }
