@@ -1,5 +1,5 @@
 query Dragons {
-  data: spacex_dragons {
+  spacex_dragons {
     abdo: name
     active
     thrusters {
