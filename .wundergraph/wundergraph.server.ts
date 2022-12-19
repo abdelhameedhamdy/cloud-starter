@@ -28,9 +28,8 @@ export default configureWunderGraphServer<HooksConfig, InternalClient>(() => ({
             return d;
           });
           return {
-            // ...hook.response.data,
             data: {
-              districts: [...mutated!],
+              districts: mutated!,
             },
           };
         },
